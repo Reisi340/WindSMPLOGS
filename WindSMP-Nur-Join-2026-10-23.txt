@@ -1,0 +1,74 @@
+WindSMP – ausschließlich Join-Versuche
+App: AFKLocal 0.14.2-diagnostics / Build 24
+Aufnahme: 23.10.2026. Zeitstempel der Originalzeilen: UTC (+00:00); Europe/Berlin = UTC + 2 Stunden.
+
+Je ein vollständig vorhandener Versuch pro betroffenem Bot, vom Verbindungsstart bis zum Server-Disconnect. Enthalten: originale connection-, error- und packet-trace-Zeilen. Keine Wiederverbindungspausen, Verbrauchswerte, Tests oder privaten Chats.
+Die Zeitstempel vor packet-trace-Zeilen sind die Ausgabezeit der gesammelten Diagnose; milliseconds im JSON ist der jeweilige Zeitpunkt relativ zum Sitzungsstart. Nutzdaten werden nicht aufgezeichnet.
+
+===== JAVA / Shadowpigi / windsmp.net:25565 =====
+
+2026-10-23T19:51:37.9525430+00:00 [connection] Verbinde mit windsmp.net
+2026-10-23T19:51:39.5548850+00:00 [error] Unable to connect to spawn-1: multiplayer.disconnect.configuration_error
+2026-10-23T19:51:39.5552560+00:00 [packet-trace] {"sequence":1,"milliseconds":325.69,"direction":"send","phase":"handshake","id":0,"name":"set_protocol","payloadBytes":17,"outcome":"written","offset":0}
+2026-10-23T19:51:39.5552600+00:00 [packet-trace] {"sequence":2,"milliseconds":325.72,"direction":"send","phase":"login","id":0,"name":"login_start","payloadBytes":27,"outcome":"written","offset":0}
+2026-10-23T19:51:39.5552630+00:00 [packet-trace] {"sequence":3,"milliseconds":358.86,"direction":"receive","phase":"login","id":1,"name":"encryption_begin","payloadBytes":171,"outcome":"handled","offset":172}
+2026-10-23T19:51:39.5552700+00:00 [packet-trace] {"sequence":4,"milliseconds":764.52,"direction":"send","phase":"login","id":1,"name":"encryption_begin","payloadBytes":260,"outcome":"written","offset":0}
+2026-10-23T19:51:39.5552730+00:00 [packet-trace] {"sequence":5,"milliseconds":980.67,"direction":"receive","phase":"login","id":3,"name":"compress","payloadBytes":2,"outcome":"handled","offset":3}
+2026-10-23T19:51:39.5552760+00:00 [packet-trace] {"sequence":6,"milliseconds":1008.55,"direction":"receive","phase":"login","id":2,"name":"success","payloadBytes":1154,"outcome":"handled","offset":1}
+2026-10-23T19:51:39.5552800+00:00 [packet-trace] {"sequence":7,"milliseconds":1008.55,"direction":"send","phase":"login","id":3,"name":"login_acknowledged","payloadBytes":0,"outcome":"written","offset":0}
+2026-10-23T19:51:39.5552830+00:00 [packet-trace] {"sequence":8,"milliseconds":1008.62,"direction":"send","phase":"configuration","id":0,"name":"settings","payloadBytes":14,"outcome":"written","offset":0}
+2026-10-23T19:51:39.5552860+00:00 [packet-trace] {"sequence":9,"milliseconds":1008.65,"direction":"send","phase":"configuration","id":2,"name":"custom_payload","payloadBytes":25,"outcome":"written","offset":0}
+2026-10-23T19:51:39.5552890+00:00 [packet-trace] {"sequence":10,"milliseconds":1488.07,"direction":"receive","phase":"configuration","id":1,"name":"custom_payload","payloadBytes":37,"outcome":"ignored","offset":1}
+2026-10-23T19:51:39.5552950+00:00 [packet-trace] {"sequence":11,"milliseconds":1488.09,"direction":"receive","phase":"configuration","id":12,"name":"feature_flags","payloadBytes":19,"outcome":"ignored","offset":1}
+2026-10-23T19:51:39.5552980+00:00 [packet-trace] {"sequence":12,"milliseconds":1488.11,"direction":"receive","phase":"configuration","id":14,"name":"select_known_packs","payloadBytes":21,"outcome":"handled","offset":1}
+2026-10-23T19:51:39.5553010+00:00 [packet-trace] {"sequence":13,"milliseconds":1488.12,"direction":"send","phase":"configuration","id":7,"name":"select_known_packs","payloadBytes":1,"outcome":"written","offset":0}
+2026-10-23T19:51:39.5553040+00:00 [packet-trace] {"sequence":14,"milliseconds":1544.35,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":20238,"outcome":"handled","offset":20239}
+2026-10-23T19:51:39.5553080+00:00 [packet-trace] {"sequence":15,"milliseconds":1544.91,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":1670,"outcome":"handled","offset":1671}
+2026-10-23T19:51:39.5553110+00:00 [packet-trace] {"sequence":16,"milliseconds":1544.98,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":2046,"outcome":"handled","offset":2047}
+2026-10-23T19:51:39.5553140+00:00 [packet-trace] {"sequence":17,"milliseconds":1545.07,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":1616,"outcome":"handled","offset":1617}
+2026-10-23T19:51:39.5553210+00:00 [packet-trace] {"sequence":18,"milliseconds":1545.13,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":2997,"outcome":"handled","offset":2998}
+2026-10-23T19:51:39.5553240+00:00 [packet-trace] {"sequence":19,"milliseconds":1545.2,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":5008,"outcome":"handled","offset":5009}
+2026-10-23T19:51:39.5553270+00:00 [packet-trace] {"sequence":20,"milliseconds":1545.27,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":388,"outcome":"handled","offset":389}
+2026-10-23T19:51:39.5553300+00:00 [packet-trace] {"sequence":21,"milliseconds":1545.31,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":1525,"outcome":"handled","offset":1526}
+2026-10-23T19:51:39.5553330+00:00 [packet-trace] {"sequence":22,"milliseconds":1545.37,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":220,"outcome":"handled","offset":221}
+2026-10-23T19:51:39.5553370+00:00 [packet-trace] {"sequence":23,"milliseconds":1552.48,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":1354,"outcome":"handled","offset":1355}
+2026-10-23T19:51:39.5553400+00:00 [packet-trace] {"sequence":24,"milliseconds":1552.56,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":1899,"outcome":"handled","offset":1900}
+2026-10-23T19:51:39.5553480+00:00 [packet-trace] {"sequence":25,"milliseconds":1552.59,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":429,"outcome":"handled","offset":430}
+2026-10-23T19:51:39.5553520+00:00 [packet-trace] {"sequence":26,"milliseconds":1570.69,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":402,"outcome":"handled","offset":403}
+2026-10-23T19:51:39.5553550+00:00 [packet-trace] {"sequence":27,"milliseconds":1570.77,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":929,"outcome":"handled","offset":930}
+2026-10-23T19:51:39.5553580+00:00 [packet-trace] {"sequence":28,"milliseconds":1570.8,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":440,"outcome":"handled","offset":441}
+2026-10-23T19:51:39.5553610+00:00 [packet-trace] {"sequence":29,"milliseconds":1570.82,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":204,"outcome":"handled","offset":205}
+2026-10-23T19:51:39.5553640+00:00 [packet-trace] {"sequence":30,"milliseconds":1570.87,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":10730,"outcome":"handled","offset":10731}
+2026-10-23T19:51:39.5553670+00:00 [packet-trace] {"sequence":31,"milliseconds":1572.25,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":12822,"outcome":"handled","offset":12823}
+2026-10-23T19:51:39.5553730+00:00 [packet-trace] {"sequence":32,"milliseconds":1572.46,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":3672,"outcome":"handled","offset":3673}
+2026-10-23T19:51:39.5553770+00:00 [packet-trace] {"sequence":33,"milliseconds":1572.57,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":5764,"outcome":"handled","offset":5765}
+2026-10-23T19:51:39.5553830+00:00 [packet-trace] {"sequence":34,"milliseconds":1574.52,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":4945,"outcome":"handled","offset":4946}
+2026-10-23T19:51:39.5553860+00:00 [packet-trace] {"sequence":35,"milliseconds":1587.35,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":32084,"outcome":"handled","offset":32085}
+2026-10-23T19:51:39.5553890+00:00 [packet-trace] {"sequence":36,"milliseconds":1587.92,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":3727,"outcome":"handled","offset":3728}
+2026-10-23T19:51:39.5553920+00:00 [packet-trace] {"sequence":37,"milliseconds":1590.32,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":1402,"outcome":"handled","offset":1403}
+2026-10-23T19:51:39.5553950+00:00 [packet-trace] {"sequence":38,"milliseconds":1590.43,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":93,"outcome":"handled","offset":94}
+2026-10-23T19:51:39.5553990+00:00 [packet-trace] {"sequence":39,"milliseconds":1590.44,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":219,"outcome":"handled","offset":220}
+2026-10-23T19:51:39.5554030+00:00 [packet-trace] {"sequence":40,"milliseconds":1590.48,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":835,"outcome":"handled","offset":836}
+2026-10-23T19:51:39.5554060+00:00 [packet-trace] {"sequence":41,"milliseconds":1590.51,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":67,"outcome":"handled","offset":68}
+2026-10-23T19:51:39.5554090+00:00 [packet-trace] {"sequence":42,"milliseconds":1590.56,"direction":"receive","phase":"configuration","id":7,"name":"registry_data","payloadBytes":4126,"outcome":"handled","offset":4127}
+2026-10-23T19:51:39.5554120+00:00 [packet-trace] {"sequence":43,"milliseconds":1601.34,"direction":"receive","phase":"configuration","id":13,"name":"tags","payloadBytes":35203,"outcome":"ignored","offset":1}
+2026-10-23T19:51:39.5554150+00:00 [packet-trace] {"sequence":44,"milliseconds":1601.36,"direction":"receive","phase":"configuration","id":2,"name":"disconnect","payloadBytes":124,"outcome":"server_disconnect","offset":125}
+
+===== BEDROCK / Pigi8983 / windsmp.net:19132 =====
+
+2026-10-23T19:51:22.9793330+00:00 [connection] Verbinde mit windsmp.net
+2026-10-23T19:51:37.2722320+00:00 [error] Unable to connect to spawn-2: Unerwarteter Fehler während der Konfiguration
+2026-10-23T19:51:37.2723660+00:00 [packet-trace] {"sequence":1,"milliseconds":13155.8,"direction":"send","phase":"Netzwerkverhandlung","id":193,"name":"request_network_settings","payloadBytes":4,"outcome":"written","offset":0}
+2026-10-23T19:51:37.2723680+00:00 [packet-trace] {"sequence":2,"milliseconds":13200.92,"direction":"receive","phase":"Netzwerkverhandlung","id":143,"name":"network_settings","payloadBytes":10,"outcome":"handled","offset":12}
+2026-10-23T19:51:37.2723690+00:00 [packet-trace] {"sequence":3,"milliseconds":13205.18,"direction":"send","phase":"Netzwerkverhandlung","id":1,"name":"login","payloadBytes":597392,"outcome":"written","offset":0}
+2026-10-23T19:51:37.2723710+00:00 [packet-trace] {"sequence":4,"milliseconds":13681.09,"direction":"receive","phase":"Netzwerkverhandlung","id":3,"name":"server_to_client_handshake","payloadBytes":425,"outcome":"handled","offset":426}
+2026-10-23T19:51:37.2723720+00:00 [packet-trace] {"sequence":5,"milliseconds":13684.14,"direction":"send","phase":"Netzwerkverhandlung","id":4,"name":"client_to_server_handshake","payloadBytes":0,"outcome":"written","offset":0}
+2026-10-23T19:51:37.2723740+00:00 [packet-trace] {"sequence":6,"milliseconds":13684.17,"direction":"receive","phase":"Netzwerkverhandlung","id":2,"name":"play_status","payloadBytes":4,"outcome":"handled","offset":5}
+2026-10-23T19:51:37.2723750+00:00 [packet-trace] {"sequence":7,"milliseconds":13684.19,"direction":"receive","phase":"play_status","id":6,"name":"resource_packs_info","payloadBytes":95,"outcome":"handled","offset":96}
+2026-10-23T19:51:37.2723780+00:00 [packet-trace] {"sequence":8,"milliseconds":13684.26,"direction":"send","phase":"resource_packs_info","id":129,"name":"client_cache_status","payloadBytes":1,"outcome":"written","offset":0}
+2026-10-23T19:51:37.2723790+00:00 [packet-trace] {"sequence":9,"milliseconds":13684.31,"direction":"send","phase":"resource_packs_info","id":8,"name":"resource_pack_client_response","payloadBytes":57,"outcome":"written","offset":0}
+2026-10-23T19:51:37.2723810+00:00 [packet-trace] {"sequence":10,"milliseconds":13723.17,"direction":"receive","phase":"resource_packs_info","id":82,"name":"resource_pack_data_info","payloadBytes":94,"outcome":"handled","offset":95}
+2026-10-23T19:51:37.2723830+00:00 [packet-trace] {"sequence":11,"milliseconds":13723.83,"direction":"send","phase":"resource_packs_info","id":8,"name":"resource_pack_client_response","payloadBytes":21,"outcome":"written","offset":0}
+2026-10-23T19:51:37.2723840+00:00 [packet-trace] {"sequence":12,"milliseconds":13758.38,"direction":"receive","phase":"resource_packs_info","id":7,"name":"resource_pack_stack","payloadBytes":54,"outcome":"handled","offset":55}
+2026-10-23T19:51:37.2723860+00:00 [packet-trace] {"sequence":13,"milliseconds":13758.55,"direction":"send","phase":"resource_pack_stack","id":8,"name":"resource_pack_client_response","payloadBytes":27,"outcome":"written","offset":0}
+2026-10-23T19:51:37.2723880+00:00 [packet-trace] {"sequence":14,"milliseconds":14292.59,"direction":"receive","phase":"resource_pack_stack","id":5,"name":"disconnect","payloadBytes":80,"outcome":"server_disconnect","offset":81}

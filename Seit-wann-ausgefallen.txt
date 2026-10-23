@@ -1,0 +1,27 @@
+WindSMP – seit wann Shadowpigi und Pigi8983 ausfallen
+Stand: 23.10.2026. Alle folgenden Datums-/Uhrzeitangaben Europe/Berlin, sofern nicht anders angegeben.
+
+Ergebnis für den aktuellen, anhaltend beobachteten Spawn-/Konfigurationsfehler:
+- Beide Bots waren am 17.10.2026 nach dem Update auf Build 21 noch bestätigt gleichzeitig auf windsmp.net online. Die dokumentierte Prüfung sah fortlaufende Datenzähler und je 81 geladene Chunks; nach Minimieren/Wiederöffnen waren beide weiterhin online.
+- Am 18.10.2026 wurden beide Fehler bereits vor dem Update auf Build 22 beobachtet: Shadowpigi an spawn-1 mit multiplayer.disconnect.configuration_error, Pigi8983 an spawn-2 mit unerwartetem Konfigurationsfehler. Erneutes Verbinden beseitigte das Problem nicht.
+- Erneute Kontrolle nach dem Update am 18.10. gegen 18:39 Uhr: beide weiterhin abgewiesen. Für Pigi8983 ist eine Fehlerantwort um 18:38:18 dokumentiert; für Shadowpigi eine fortschreitende Wiederholungsanzeige 18:38:51 → 18:40:52.
+- Am 19.10. erneut konkrete Fehleraufnahmen: Shadowpigi um 18:09:31.679374 bei zusätzlichem Vergleich mit Java 1.21.4; Pigi8983 um 18:11:45.184238. Automatische Java-Version und 1.21.11 waren zuvor ebenfalls fehlgeschlagen.
+- Am 20./21.10. weiterhin Fehler dokumentiert; Nutzer berichtet, dass derselbe Java-Account auch im normalen Minecraft mit „Unexpected error“ scheitert. Das ist eine Nutzerrückmeldung, kein von uns aufgezeichneter Originalclient-Test.
+- Am 23.10. vollständige Paketdiagnosen: Java empfängt disconnect 0x02 nach Registry-Daten/Tags; Bedrock empfängt disconnect 0x05 nach resource_pack_stack und Client-Bestätigung. Beide Abbruchpakete werden erfolgreich gelesen.
+
+Damit ist der Beginn des aktuellen Problems zwischen der letzten dokumentierten erfolgreichen Kontrolle am 17.10. und der Fehlerbeobachtung am 18.10. einzugrenzen. Ein genauer erster Ausfallzeitpunkt und lückenlose Ausfallzeiten sind nicht rekonstruierbar. Die Beobachtung vor Build 22 belegt, dass dessen Installation nicht der ursprüngliche Beginn dieses Fehlers war; sie beweist keine bestimmte andere Ursache.
+
+Frühere, getrennte Störung:
+- 16.10.2026: Xbox-/Mojang-Anmeldung scheiterte wegen DNS-Antworten 0.0.0.0 und Connection refused. Betraf auch andere Bots. Beide hier betroffenen Bots waren am 17.10. wieder online. Deshalb ist der 16.10. nicht der belegte Beginn des aktuellen dauerhaften Spawn-/Konfigurationsfehlers.
+- 14.10.2026: strukturiert gespeicherte Prüfung um 16:31:30 dokumentiert Shadowpigi und Pigi8983 beide online auf WindSMP.
+
+Belegquellen im Projekt, keine nachträglich erfundenen Logs:
+1. Tests/BedrockFix-2026-10-14/live-verification.json
+2. Tests/Connection-2026-10-16/DIAGNOSE.md
+3. Tests/Economy-2026-10-17/ERGEBNIS.md (Installation und Live-Prüfung)
+4. Tests/Cpu-2026-10-17/ERGEBNIS.md (Installation und kurze Live-Messung)
+5. Tests/Recovery-2026-10-18/ERGEBNIS.md (Test vor Update sowie Abschlusskontrolle)
+6. Tests/Connection-2026-10-19/DIAGNOSE.md
+7. Tests/PacketTrace-2026-10-23/ERGEBNIS.md und aktuelle Join-Aufnahmen
+
+Grenzen: Laufende App-Logs sind auf 100 Einträge pro Bot begrenzt und liegen im Arbeitsspeicher. Neustarts bzw. neuere Einträge verdrängen alte Angaben. Dokumentierte Berichte sind Beobachtungsbelege, keine durchgehende Überwachung. Dateizeitstempel wurden nicht als exakte Online-/Ausfallzeit ausgegeben. Die Aufnahmen vom 23.10. können den historischen ersten Abbruch nicht nachliefern.
